@@ -21,6 +21,29 @@
 ```sh
 git clone github.com/Vitaly1996/yatube.git
 ```
+- создать и активировать виртуальное окружение для проекта
+
+```sh
+python -m venv venv
+source venv/scripts/activate (Windows)    
+source venv/bin/activate (MacOS/Linux)
+python3 -m pip install --upgrade pip
+```
+- установить зависимости
+```sh
+python pip install -r requirements.txt
+```
+
+- сделать миграции
+```sh
+python manage.py makemigrations
+python manage.py migrate
+```
+
+- запустить сервер
+```sh
+python manage.py runserver
+```
 
 ### Получение персонального токена
 Для доступа к API необходимо получить токен: 
